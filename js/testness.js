@@ -1,23 +1,36 @@
-(function(nodeness) {
+(function() {
 
     "use strict";
 
-    console.log(nodeness);
+    var EventEmitter = require('events').EventEmitter;
+    console.log(EventEmitter);
 
-    x();
+    /*var Counter = function(init) {
 
-    var f = function f () {
-        "use strict";
-        console.log('testing...');
+        this.increment = function() {
+
+            init++;
+
+            this.emit('incremented', init);
+
+        };
+
     };
 
-    f();
+    Counter.prototype = new EventEmitter();
 
-    function x () {
-        "use strict";
-        console.log('testing again...');
-    }
+    var counter = new Counter(24);
 
+    var callback = function() {
 
+        console.log(count);
 
-}('NODENESS...'));
+    };
+
+    counter.addListener('incremented', callback);
+
+    counter.increment();
+
+    counter.increment();*/
+
+}());
