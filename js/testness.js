@@ -2,10 +2,17 @@
 
     "use strict";
 
+//    var TestEventEmitter = require('events');
+//    console.log(TestEventEmitter);
+
     var EventEmitter = require('events').EventEmitter;
     console.log(EventEmitter);
 
-    /*var Counter = function(init) {
+    var Counter = function(init) {
+
+//        this.testAttr = 'JavaScript is funny...';
+//
+//        var testAttr = 'JavaScript is not funny...';
 
         this.increment = function() {
 
@@ -21,7 +28,7 @@
 
     var counter = new Counter(24);
 
-    var callback = function() {
+    var callback = function(count) {
 
         console.log(count);
 
@@ -31,6 +38,6 @@
 
     counter.increment();
 
-    counter.increment();*/
+    counter.increment();
 
 }());
